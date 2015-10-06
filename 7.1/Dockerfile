@@ -6,10 +6,11 @@ RUN apt-get -y update && \
     apt-get install -y wget unzip openjdk-7-jdk git subversion libreoffice && \
     rm -rf /var/lib/apt/lists/*
 
+# Download Digital Factory
 RUN wget -q http://www.jahia.com/downloads/jahia/digitalfactory7.1.0/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar -O /tmp/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar
 RUN chmod +x /tmp/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar
 
-# Install Maven
+# Download Maven 3
 RUN wget -q http://wwwftp.ciril.fr/pub/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.zip -O /tmp/apache-maven-3.3.3-bin.zip
 RUN unzip /tmp/apache-maven-3.3.3-bin.zip -d /usr/share
 RUN ln -s /usr/share/apache-maven-3.3.3 /usr/share/maven

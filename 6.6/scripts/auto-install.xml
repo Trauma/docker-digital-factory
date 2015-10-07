@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutomatedInstallation langpack="fra">
+    <com.izforge.izpack.panels.HelloPanel id="UNKNOWN (com.izforge.izpack.panels.HelloPanel)" />
+    <com.izforge.izpack.panels.LicencePanel id="UNKNOWN (com.izforge.izpack.panels.LicencePanel)" />
+    <com.izforge.izpack.panels.TargetPanel id="UNKNOWN (com.izforge.izpack.panels.TargetPanel)">
+        <installpath>/opt/Enterprise-Jahia_xCM_v6.6.2.10_r52607.3399</installpath>
+    </com.izforge.izpack.panels.TargetPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="installType">
+        <userInput>
+            <entry key="installation.type" value="advanced" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.PacksPanel id="packsPanel">
+        <pack index="0" name="jahia" selected="true" />
+        <pack index="1" name="tomcat" selected="true" />
+    </com.izforge.izpack.panels.PacksPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="serverType">
+        <userInput />
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="dbMode">
+        <userInput>
+            <entry key="dbSettings.mode" value="embedded" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="dbType">
+        <userInput/>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="dbTypeMySQL">
+        <userInput/>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="dbSettings">
+        <userInput/>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="appServer">
+        <userInput>
+            <entry key="jahiaManager.username" value="jahia" />
+            <entry key="tomcat.serverPort" value="8005" />
+            <entry key="tomcat.ajpPort" value="8009" />
+            <entry key="tomcat.httpPort" value="8080" />
+            <entry key="tomcat.sslPort" value="8443" />
+            <entry key="jahiaManager.password" value="password" />
+            <entry key="jahia.war.contextName" value="" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="operatingMode">
+        <userInput>
+            <entry key="operatingMode.configure.ldap" value="false"/>
+            <entry key="operatingMode.configure.cluster" value="false"/>
+            <entry key="operatingMode" value="development" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="ldap">
+        <userInput />
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="cluster">
+        <userInput/>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="superUser">
+        <userInput>
+            <entry key="superUser.lastname" value="" />
+            <entry key="superUser.password" value="root" />
+            <entry key="superUser.firstname" value="" />
+            <entry key="superUser.email" value="" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="mailSettings">
+        <userInput>
+            <entry key="mailSettings.administrator" value="" />
+            <entry key="mailSettings.server" value="aspmx.l.google.com" />
+            <entry key="mailSettings.from" value="no-reply@jahia.com" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="externalToolSettings">
+        <userInput />
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="externalizedConfig">
+        <userInput>
+            <entry key="externalizedConfigActivated" value="false" />
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.SummaryPanel id="UNKNOWN (com.izforge.izpack.panels.SummaryPanel)" />
+    <com.izforge.izpack.panels.ExtendedInstallPanel id="UNKNOWN (com.izforge.izpack.panels.ExtendedInstallPanel)" />
+    <com.izforge.izpack.panels.ShortcutPanel id="shortcutPanel" />
+    <com.izforge.izpack.panels.UserInputPanel id="afterInstall">
+        <userInput />
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.ProcessPanel id="UNKNOWN (com.izforge.izpack.panels.ProcessPanel)" />
+    <com.izforge.izpack.panels.FinishPanel id="UNKNOWN (com.izforge.izpack.panels.FinishPanel)" />
+</AutomatedInstallation>

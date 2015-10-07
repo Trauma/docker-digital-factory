@@ -2,4 +2,6 @@
 
 [![Build Status](https://travis-ci.org/f4bien/docker-digital-factory.svg?branch=master)](https://travis-ci.org/f4bien/docker-digital-factory)
 
-Docker image packaging for Digital Factory http://www.jahia.com/
+Docker image packaging for [Digital Factory](https://www.jahia.com/fr/produits/digital-factory) from [Jahia](https://www.jahia.com/fr/produits/digital-factory/).
+
+That repository is referenced on [hub.docker.com](https://hub.docker.com/r/faras/digital-factory/).

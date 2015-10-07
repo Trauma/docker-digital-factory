@@ -4,6 +4,7 @@ language: bash
 sudo: 9000
 
 env:
+  - VERSION=6.6
   - VERSION=7.1
 
 install:

@@ -8,8 +8,8 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/*
 
 # Download Digital Factory
-RUN wget -q http://www.jahia.com/downloads/jahia/digitalfactory7.1.0/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar -O /tmp/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar
-RUN chmod +x /tmp/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar
+RUN wget -q https://www.jahia.com/downloads/jahia/digitalexperiencemanager7.1.1/DigitalExperienceManager-EnterpriseDistribution-7.1.1.0-r53717.3663.jar -O /tmp/DigitalExperienceManager.jar
+RUN chmod +x /tmp/DigitalExperienceManager.jar
 
 # Download Maven 3
 RUN wget -q http://wwwftp.ciril.fr/pub/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.zip -O /tmp/apache-maven-3.3.3-bin.zip
@@ -24,13 +24,13 @@ ENV PATH=/usr/share/maven/bin:$PATH
 # Install Digital Factory
 ADD scripts /tmp
 WORKDIR /tmp
-RUN java -jar /tmp/DigitalFactory-EnterpriseDistribution-7.1.0.0-r52740.3425.jar auto-install.xml
-RUN ln -s /opt/DigitalFactory-EnterpriseDistribution-7.1.0.0 /opt/digital-factory
+RUN java -jar /tmp/DigitalExperienceManager.jar auto-install.xml
+RUN ln -s /opt/DigitalExperienceManager-EnterpriseDistribution-7.1.1.0 /opt/DigitalExperienceManager
 RUN rm -rf /tmp/*
 
 # Expose Digital Factory port
 EXPOSE 8080
 
 # Start Tomcat
-WORKDIR /opt/digital-factory/tomcat/bin
+WORKDIR /opt/DigitalExperienceManager/tomcat/bin
 CMD ["./startup.sh"]

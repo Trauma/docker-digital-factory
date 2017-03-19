@@ -12,9 +12,9 @@ RUN wget -q https://www.jahia.com/downloads/jahia/digitalexperiencemanager7.1.1/
 RUN chmod +x /tmp/DigitalExperienceManager.jar
 
 # Download Maven 3
-RUN wget -q http://wwwftp.ciril.fr/pub/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.zip -O /tmp/apache-maven-3.3.3-bin.zip
-RUN unzip /tmp/apache-maven-3.3.3-bin.zip -d /usr/share
-RUN ln -s /usr/share/apache-maven-3.3.3 /usr/share/maven
+RUN wget -q http://wwwftp.ciril.fr/pub/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip -O /tmp/apache-maven-3.3.9-bin.zip
+RUN unzip /tmp/apache-maven-3.3.9-bin.zip -d /usr/share
+RUN ln -s /usr/share/apache-maven-3.3.9 /usr/share/maven
 
 # Set env variables
 ENV M2_HOME=/usr/share/maven
